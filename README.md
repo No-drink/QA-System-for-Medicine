@@ -19,9 +19,9 @@
 
 + 对于药标网的数据爬取通过Selenium自动化工具进行，通过对于药标网网页源代码的观察，可得到其“查看”按钮与“下一页”按钮的XPath代码具有明显的规律性，通过XPath定位方式，逐个点击“查看”按钮进入相应页面，定位其具体内容并存储，每页进行20次循环，共遍历284页即可获取全部数据。这里需要注意的是该网站有个别查看按钮已失效，故在循环中应注意捕获相应的“未找到相应对象”异常，避免出现程序报错的情况，保证程序的鲁棒性。
 
-<img src="C:\Users\Joey\AppData\Roaming\Typora\typora-user-images\image-20220604230650003.png" alt="image-20220604230650003" style="zoom: 50%;" />
+![image](https://user-images.githubusercontent.com/105553541/190540911-d32aa534-2839-42af-8848-70fb67238b97.png)
 
-<img src="C:\Users\Joey\AppData\Roaming\Typora\typora-user-images\image-20220605005234989.png" alt="image-20220605005234989" style="zoom:50%;" />
+![image](https://user-images.githubusercontent.com/105553541/190540929-47a9e692-f6bc-4c11-8411-69feba9f06d0.png)
 
 + 爬取数据的存储方式我们在初期采取了多种格式，以保证在后续的索引建立等环节有多种方式可以选择。分别是：
 
@@ -81,18 +81,18 @@
 
 + 疗效类问题：
 
-![image-20220605020602280](C:\Users\Joey\AppData\Roaming\Typora\typora-user-images\image-20220605020602280.png)
+![image](https://user-images.githubusercontent.com/105553541/190540977-d634c169-8c03-485d-ac56-356eb3a7d1be.png)
 
 + 存放类问题：
 
-![image-20220605020821196](C:\Users\Joey\AppData\Roaming\Typora\typora-user-images\image-20220605020821196.png)
+![image](https://user-images.githubusercontent.com/105553541/190540988-4244b3a5-6aeb-4a10-b268-758012752389.png)
 
 + 条目类问题：
 
-![image-20220605020922885](C:\Users\Joey\AppData\Roaming\Typora\typora-user-images\image-20220605020922885.png)
+![image](https://user-images.githubusercontent.com/105553541/190541003-14db8be3-9c9d-478d-bdc8-890f329719ae.png)
 
 + 不宜同用药问题：
 
-![image-20220605021012105](C:\Users\Joey\AppData\Roaming\Typora\typora-user-images\image-20220605021012105.png)
+![image](https://user-images.githubusercontent.com/105553541/190541013-c88af5e5-5696-4814-8a43-ca4938d65e5e.png)
 
-![image-20220605021720783](C:\Users\Joey\AppData\Roaming\Typora\typora-user-images\image-20220605021720783.png)
+![image](https://user-images.githubusercontent.com/105553541/190541028-765cada0-04de-484e-a030-f6c793414936.png)
